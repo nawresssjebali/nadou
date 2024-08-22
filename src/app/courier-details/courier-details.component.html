@@ -1,0 +1,35 @@
+<div class="form-container">
+  <div class="form-group">
+    <label for="courierNumber">Number of Couriers:</label>
+    <input type="number" id="courierNumber" [(ngModel)]="numberOfCouriers" (input)="generateCourierLines()" />
+  </div>
+
+  <div *ngFor="let courier of couriers; let i = index" class="courier-line">
+    <h4>Courier {{ i + 1 }}</h4>
+
+    <div class="form-group">
+      <label for="area-{{i}}">Area Covered:</label>
+      <input type="number" id="area-{{i}}" [(ngModel)]="courier.area" />
+    </div>
+
+    <div class="form-group">
+      <label for="price-{{i}}">Price per Kg:</label>
+      <input type="number" id="price-{{i}}" [(ngModel)]="courier.price" />
+    </div>
+
+    <div class="form-group">
+      <label for="coordinate-x-{{i}}">Coordinate X:</label>
+      <input type="number" id="coordinate-x-{{i}}" [(ngModel)]="courier.coordinateX" />
+    </div>
+
+    <div class="form-group">
+      <label for="coordinate-y-{{i}}">Coordinate Y:</label>
+      <input type="number" id="coordinate-y-{{i}}" [(ngModel)]="courier.coordinateY" />
+    </div>
+
+    <!-- Add button with no current functionality -->
+    <button type="button" (click)="onAddButtonClick(i)">Add</button>
+  </div>
+
+  <button (click)="submit()">Submit</button>
+</div>

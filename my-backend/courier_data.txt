@@ -1,0 +1,8 @@
+Date: 2024-08-22 14:20:32.274137
+Courier Location: (20, 10)
+Area Covered: 5
+Closest Customers' Coordinates: (17, 9)
+New Customer Quantity: 16
+Price per 1 Kg: 10
+Total Price (1 Kg * New Customer Quantity): 160
+--------------------------------------------------
