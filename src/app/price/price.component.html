@@ -1,0 +1,23 @@
+<div *ngIf="isLoading" class="loading-container">
+    <p>please wait a little bit and thank you</p>
+  </div>
+  
+  
+  <div *ngIf="!isLoading" class="results-container">
+    <h2>Route Optimization Results</h2>
+    <p><strong>Hub Costs:</strong> {{ hubCosts }}</p>
+    <p><strong>Route Costs:</strong> {{ routeCosts }}</p>
+    <p><strong>Courier Costs:</strong> {{total_price}}</p>
+    <div class="total-sum-container">
+      <h3>Total Sum (Price of the Project)</h3>
+      <div class="total-sum-shape">
+        <p>{{ hubCosts + routeCosts + total_price | currency }}</p>
+      </div>
+      
+      
+  </div>
+  
+
+  
+  
+  

@@ -1,0 +1,10 @@
+<div *ngIf="isLoading" class="loading-container">
+    <p>Please wait a little bit and thank you...</p>
+  </div>
+  
+  <div *ngIf="!isLoading" class="results-container">
+    <img *ngIf="imageUrl" [src]="imageUrl" alt="Generated Plot">
+  </div>
+  
+  
+  

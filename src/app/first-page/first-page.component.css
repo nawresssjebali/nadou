@@ -1,0 +1,61 @@
+.intro {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro h1 {
+    color: #6367ef;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  @keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .wave {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave-animation 2s infinite;
+    font-size: 1.5em;
+  }
+  .button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    background-color: #6367ef;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #4b4fe1;
+  }
+  
+    

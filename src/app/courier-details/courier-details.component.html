@@ -27,9 +27,15 @@
       <input type="number" id="coordinate-y-{{i}}" [(ngModel)]="courier.coordinateY" />
     </div>
 
-    <!-- Add button with no current functionality -->
-    <button type="button" (click)="onAddButtonClick(i)">Add</button>
-  </div>
+    <!-- Add button with a unique identifier -->
+    <button type="button" id="add-btn-{{i}}" (click)="onAddButtonClick(i)">Add</button>
 
-  <button (click)="submit()">Submit</button>
+    <!-- Buttons placed inside the form-group -->
+    
+  </div>
+  <div class="form-group-buttons">
+    <button class="corner-btn top-left" (click)="submit()">See Price </button>
+    <button class="corner-btn top-right" (click)="seeSchema()">See Schema</button>
+  </div>
 </div>
+
